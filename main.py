@@ -11,11 +11,11 @@ Field = [[Null_Symbol for j in range(N)] for i in range(N)]     # инииали
 
 def print_field():  # печать текущего состояния игровго поля
     print(" \t", end='')
-    for i in range(N):  # вынесение номерок столбцов
+    for i in range(N):  # вынесение номеров столбцов
         print(i, "\t", end='')
     for i in range(N):
         print()
-        print(i, "\t", end='')  # вынесение номерок строк
+        print(i, "\t", end='')  # вынесение номеров строк
         for j in range(N):
             print(Field[i][j], "\t", end='')
     print()
