@@ -98,7 +98,7 @@ print("Начинаем игру 'Крестики-нолики'!\n"
 
 while True:
     while True:
-        i = check_input(input(str("Введите ход игрока №" + str(int(Gamer) + 1) + " (" + Symbols[int(Gamer)] + "): ")))
+        i = check_input(input(str("Введите ход игрока №" + str(int(Gamer) + 1) + " ('" + Symbols[int(Gamer)] + "'): ")))
         if i == [-1, -1]:   # введено неверное значение
             print("Ошибка ввода! Повторите ввод координаты.")
         else:
