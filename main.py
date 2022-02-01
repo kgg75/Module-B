@@ -6,7 +6,7 @@ Symbols = ['X', 'O']     # допустимые символы
 
 Gamer = False   # 0 - начинают крестики, 1 - начинают нолики
 s_range = [str(i) for i in range(N)]    # допустимые значения для ввода координат
-Field = [[Null_Symbol for j in range(N)] for i in range(N)]     # инииализация игрового поля
+Field = [[Null_Symbol for j in range(N)] for i in range(N)]     # инициализация игрового поля
 
 
 def print_field():  # печать текущего состояния игровго поля
@@ -70,7 +70,7 @@ def check():
             if k == N:
                 return True
 
-    if Field[0][0] != Null_Symbol and Field[0][0] == Symbols[int(Gamer)]:  # просмотр поля по 1-q диагонали
+    if Field[0][0] != Null_Symbol and Field[0][0] == Symbols[int(Gamer)]:  # просмотр поля по 1-й диагонали
         k = 1
         for j in range(1, N):
             if Field[j][j] != Symbols[int(Gamer)]:   # сравнение с текущим символом
@@ -80,7 +80,7 @@ def check():
         if k == N:
             return True
 
-    if Field[N-1][0] != Null_Symbol and Field[N-1][0] == Symbols[int(Gamer)]:  # просмотр поля по 1-q диагонали
+    if Field[N-1][0] != Null_Symbol and Field[N-1][0] == Symbols[int(Gamer)]:  # просмотр поля по 2-й диагонали
         k = 1
         for j in range(1, N):
             if Field[N-1-j][j] != Symbols[int(Gamer)]:   # сравнение с текущим символом
